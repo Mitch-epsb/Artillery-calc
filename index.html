@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AAC</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body id="body">
+    <h1>- Artillery Angle Calculation -</h1>
+    <img src="imgs/art.jpg" alt="" />
+    <h2>Enter Artillery information</h2>
+    <div id="text">
+      <p>
+        Distance to target: <input type="number" id="inp-range" />
+        <select name="Unit" id="unit-d">
+          <option value="1">m</option>
+          <option value="2">Km</option>
+        </select>
+      </p>
+
+      <p>
+        Force of Launch: <input type="number" id="force" />
+        <select name="Unit" id="unit-n">
+          <option value="1">N</option>
+          <option value="2">kN</option>
+          <option value="3">MN</option>
+        </select>
+      </p>
+      <p>
+        Mass of Shell: <input type="number" id="mass" />
+        <select name="Unit" id="unit-m">
+          <option value="1">Kg</option>
+          <option value="2">g</option>
+        </select>
+      </p>
+      <p>
+        Length of barrel: <input type="number" id="inp-brl" />
+        <span id="meters">m</span>
+      </p>
+      <div id="btndiv">
+        <button id="btn">Find Angle</button>
+      </div>
+
+      <hr />
+      <div id="output">
+        <p>Angle to set Artillery: <span id="outangle">----</span>°</p>
+
+        <p>Maximum Range: <span id="maxr">----</span> <span id="mag"></span></p>
+      </div>
+      <div id="darkbtn">
+        <button id="dark">Dark Mode</button>
+      </div>
+    </div>
+  </body>
+</html>
